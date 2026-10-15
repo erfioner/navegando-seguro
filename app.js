@@ -9,7 +9,7 @@ const explanations = {
   },
   account: {
     correct: 'fraud',
-    clues: ['Une banque ne doit pas vous demander de transmettre un code reçu par SMS.', 'Le domaine boursorama.fr est associé à la banque, mais une adresse peut être usurpée.']
+    clues: ['Une banque ne doit pas vous demander de transmettre un code reçu par SMS.', 'L’adresse se termine par « @gmail.com », et non par un domaine officiel de la banque.','« Boursoroma » est mal orthographié : le nom correct est « Boursorama ».']
   },
   incident: {
     correct: 'legitimate',
