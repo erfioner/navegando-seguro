@@ -1,0 +1,84 @@
+:root { color-scheme: light; --ink: #18313a; --muted: #63757b; --deep: #123c4a; --line: #dce7e4; --paper: #f5f8f6; --green: #eaf6ee; --amber: #fff3e9; --gmail-red: #d93025; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 18px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+button { font: inherit; }
+.skip-link { position: absolute; left: -10000px; top: 8px; z-index: 2; padding: 10px; background: white; }
+.skip-link:focus { left: 8px; }
+.site-header { background: #fff; border-bottom: 1px solid var(--line); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; max-width: 1120px; min-height: 88px; margin: auto; padding: 12px 24px; }
+.brand-lockup { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.brand-mark { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 14px; background: var(--deep); color: #fff; font-size: 24px; font-weight: 800; }
+.brand-copy { display: grid; line-height: 1.25; }
+.brand-copy strong { font-size: 1.12rem; }
+.brand-copy small { margin-top: 3px; color: var(--muted); font-size: .96rem; }
+.ceili-logo { display: block; flex: 0 1 190px; width: 190px; max-height: 66px; object-fit: contain; }
+main { max-width: 1120px; margin: 0 auto; padding: 28px 24px 18px; }
+.intro { margin-bottom: 18px; text-align: center; }
+.progress { margin: 7px 0 0; color: var(--muted); font-size: 1rem; font-weight: 700; }
+.eyebrow { margin: 0 0 3px; color: #357365; font-size: .78rem; font-weight: 850; letter-spacing: .12em; }
+h1 { margin: 0; font-size: clamp(1.9rem, 3.6vw, 2.5rem); line-height: 1.2; }
+.exercise-grid { display: grid; grid-template-columns: minmax(0, 720px); justify-content: center; gap: 18px; align-items: start; }
+.exercise-card { min-width: 0; padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: #fff; box-shadow: 0 8px 24px rgba(18,60,74,.05); }
+.exercise-heading { display: flex; align-items: center; gap: 9px; margin-bottom: 8px; }
+.exercise-number { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: #e5f2ee; color: var(--deep); font-weight: 850; }
+.exercise-type { color: var(--muted); font-size: .88rem; font-weight: 850; letter-spacing: .08em; }
+h2 { margin: 0 0 14px; font-size: 1.38rem; }
+.scenario-context { margin: -5px 0 12px; color: var(--muted); font-size: 1rem; }
+.sample-message, .sms-message { overflow: hidden; margin-bottom: 18px; border: 1px solid var(--line); border-radius: 13px; background: #fff; }
+.sample-top { display: flex; align-items: center; gap: 12px; padding: 13px 15px; border-bottom: 1px solid var(--line); background: #f3f4f6; }
+.sample-avatar { display: grid; place-items: center; flex: 0 0 40px; width: 40px; height: 40px; border-radius: 50%; background: #e2e8f0; color: var(--deep); font-size: 1.05rem; font-weight: 800; }
+.gmail-message { background: #fff; }
+.gmail-message .sample-top { background: #f8f9fa; }
+.gmail-message .sample-avatar { background: #fce8e6; color: var(--gmail-red); }
+.sample-meta { display: grid; min-width: 0; }
+.sample-meta strong { font-size: 1rem; }
+.sample-meta small { color: #5f6368; font-size: .92rem; overflow-wrap: anywhere; }
+.sample-body { padding: 7px 17px 12px; background: #fff; font-size: 1.08rem; }
+.sample-body p { margin: 10px 0; }
+.sample-subject { margin: 6px 0 10px; color: #202124; font-size: 1.08rem; font-weight: 700; }
+.sms-message { padding: 15px; background: #fff; }
+.sms-contact { display: flex; align-items: center; justify-content: center; gap: 9px; color: #42464b; font-size: .98rem; }
+.contact-avatar { position: relative; display: inline-block; width: 35px; height: 35px; border-radius: 50%; background: #aeb4bf; }
+.contact-avatar::before { position: absolute; top: 6px; left: 12px; width: 11px; height: 11px; border-radius: 50%; background: white; content: ""; }
+.contact-avatar::after { position: absolute; bottom: 5px; left: 8px; width: 19px; height: 11px; border-radius: 12px 12px 8px 8px; background: white; content: ""; }
+.sms-meta { margin: 12px 0 10px; color: #767a80; font-size: .9rem; text-align: center; }
+.sms-bubble { max-width: 92%; margin-right: auto; padding: 13px 16px; border-radius: 7px 20px 20px 20px; background: #f0eff4; color: #17191c; }
+.sms-bubble p { margin: 0; font-size: 1.08rem; line-height: 1.45; }
+.sms-link { color: #1676d2; text-decoration: underline; text-underline-offset: 2px; overflow-wrap: anywhere; }
+.answer-group { min-width: 0; margin: 0; padding: 0; border: 0; }
+.answer-group legend { margin-bottom: 9px; font-size: 1.05rem; font-weight: 800; }
+.answer-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.answer-buttons button, .retry-button { min-height: 58px; padding: 12px 16px; border: 2px solid #b7ceca; border-radius: 11px; background: #fff; color: var(--deep); font-size: 1.05rem; font-weight: 800; cursor: pointer; touch-action: manipulation; }
+.answer-buttons button:hover:not(:disabled), .retry-button:hover { border-color: #237b68; background: #eaf5f1; }
+.answer-buttons button:focus-visible, .retry-button:focus-visible { outline: 3px solid #1b7f9b; outline-offset: 2px; }
+.answer-buttons button:disabled { cursor: default; opacity: .58; }
+.answer-buttons button.answer-selected { opacity: 1; border-color: var(--deep); }
+.answer-feedback { margin-top: 14px; padding: 14px 16px; border-radius: 12px; }
+.answer-feedback.is-correct { border: 1px solid #b6ddc2; background: var(--green); }
+.answer-feedback.is-incorrect { border: 1px solid #f0cda9; background: var(--amber); }
+.answer-feedback strong { display: block; line-height: 1.35; }
+.answer-feedback ul { margin: 8px 0 10px; padding-left: 19px; }
+.answer-feedback li { margin: 6px 0; font-size: 1rem; }
+.retry-button { min-height: 48px; padding: 9px 14px; font-size: 1rem; }
+.footnote { margin: 13px 0 0; color: var(--muted); font-size: .95rem; text-align: center; }
+[hidden] { display: none !important; }
+@media (max-width: 720px) {
+  .header-inner { min-height: 72px; padding: 10px 18px; }
+  .brand-mark { width: 40px; height: 40px; }
+  .brand-copy strong { font-size: 1rem; }
+  .brand-copy small { font-size: .86rem; }
+  .ceili-logo { flex-basis: 132px; width: 132px; max-height: 48px; }
+  main { padding: 22px 16px 16px; }
+  .exercise-grid { grid-template-columns: minmax(0, 560px); margin: auto; }
+  .exercise-card { padding: 19px; }
+  body { font-size: 17px; }
+}
+@media (max-width: 420px) {
+  .header-inner { gap: 10px; padding-inline: 14px; }
+  .brand-lockup { gap: 8px; }
+  .brand-copy strong { font-size: .92rem; }
+  .brand-copy small { font-size: .78rem; }
+  .ceili-logo { flex-basis: 100px; width: 100px; max-height: 40px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
