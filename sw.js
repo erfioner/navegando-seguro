@@ -1,4 +1,4 @@
-const CACHE_NAME = 'navegando-seguro-v6';
+const CACHE_NAME = 'navegando-seguro-v7';
 const CORE_ASSETS = [
   './',
   './index.html',
