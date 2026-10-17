@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "Navegando Seguro",
+  "short_name": "Navegando",
+  "description": "Guide pratique pour apprendre les bons réflexes de cybersécurité.",
+  "lang": "fr-FR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fbfcfa",
+  "theme_color": "#123c4a",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
